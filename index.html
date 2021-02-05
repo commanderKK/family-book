@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            My Family book
+        </title>
+    </head>
+    <body>
+        <script>
+          var Family_name=["papa","mummy","naomika","me!"];
+          console.log(Family_name);
+          family_img=["https://www.how-to-draw-funny-cartoons.com/image-files/cartoon-dad-005.jpg",
+                      "https://previews.123rf.com/images/jemastock/jemastock1806/jemastock180602348/102903914-cute-mother-cartoon-vector-illustration-graphic-design.jpg",
+                      "https://i.pinimg.com/originals/ed/95/55/ed95554ca04d9dea7af7f3014cd11557.png",
+                      "https://i.pinimg.com/originals/46/8c/67/468c67ced02dae7873c06b94566e4ab0.png"
+                    ]
+        console.log(family_img);
+        var i= 0;
+function nextImg() {
+  document.getElementById("nextname").innerHTML=Family_name[i];
+  document.getElementById("img1").src=family_img[i];
+  i++;
+}
+
+        </script>
+
+        <h1 id="nextname">
+            My Family book! -by Advika
+        </h1>
+        <br>
+        <hr>
+        <br>
+        <img id="img1" src="https://en.pimg.jp/025/038/743/1/25038743.jpg">
+        <br>
+        <br>
+        <button id="button1" onclick=nextImg() > 
+            next
+            </button>
+     
+    </body>
+</html>
